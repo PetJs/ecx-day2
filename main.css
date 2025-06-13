@@ -3,3 +3,80 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-sidebar-container{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);           /* The blur! */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    width: 25vw;
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.right-sidebar-container{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);           /* The blur! */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    width: 25vw;
+    min-height: 100vh;
+    right: 0;
+    top: 0;
+}
+
+.middle{
+    width: 50%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.chat-header{
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);           /* The blur! */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.img-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-img{
+    position: relative;
+}
+
+.active-icon{
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+.call-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
