@@ -10,12 +10,15 @@ body{
     background-size: cover;
 }
 
-.left-sidebar-container{
-    position: fixed;
+.blur{
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);           /* The blur! */
     -webkit-backdrop-filter: blur(10px);   /* Safari support */
+}
+
+.left-sidebar-container{
+    position: fixed;
     width: 25vw;
     min-height: 100vh;
     left: 0;
@@ -24,10 +27,6 @@ body{
 
 .right-sidebar-container{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);           /* The blur! */
-    -webkit-backdrop-filter: blur(10px);   /* Safari support */
     width: 25vw;
     min-height: 100vh;
     right: 0;
@@ -44,11 +43,8 @@ body{
     width: 100%;
     display: flex;
     padding: 24px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);           /* The blur! */
-    -webkit-backdrop-filter: blur(10px);   /* Safari support */
     justify-content: space-between;
+    align-items: center;
 }
 
 .avatar{
@@ -78,5 +74,69 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+}
+
+.chat-name{
+    font-size: 16px;
+}
+
+.chat-message{
+    font-size: 10px;
+    color: gray;
+}
+
+.ls-header{
+    padding-inline: 12px;
+}
+
+.logo{
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.ls-top{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    width: 100%;
+    margin-top: 12px;
+    background: none;
+    border: 1px solid rgba(71, 69, 69, 0.87);
+    padding: 4px;
+    padding-left: 32px;
+    border-radius: 8px;
+}
+
+.search::placeholder{
+    font-size: 12px;
+    color: black;
+}
+
+.search-container{
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.search-icon{
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    margin-right: 12px;
+}
+
+.chat-sidebar{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.chat-sidebar:hover{
+    background-color: rgba(0, 0, 0, 0.397);
 }
